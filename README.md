@@ -43,7 +43,7 @@ NOTE:  **csrfToken** is included to manually copy and paste value to POST Reques
 
 ### POST Request (Postman)
 1. Create dynamic route for **POST** request.
-2. Type http://127.0.0.1:8000/dynamic-route
+2. Type http://127.0.0.1:8000/ `<your_dynamic_url>`
 3. From **Body** tab, select **raw** then include your body in json format. (Example below)
 ```json
 {
