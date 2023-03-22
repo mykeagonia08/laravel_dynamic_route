@@ -17,9 +17,10 @@ Before you begin, ensure you have the following installed on your local machine:
 
 1. Clone this repository to your local machine.
 2. Navigate to the root directory of the project.
-3. Run composer install to install the project dependencies.
+3. Run `composer install --ignore-platform-req=ext-fileinfo` to install the project dependencies.
+4. Copy the `.env.example` file to `.env` by running `cp .env.example .env`.
 5. Generate a new application key by running `php artisan key:generate`.
-7. Start the application by running `php artisan serve`.
+6. Start the application by running `php artisan serve`.
 
 ## Usage
 
