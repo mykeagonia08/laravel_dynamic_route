@@ -19,5 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/{url}', [DynamicRoutingController::class, 'handleGetRequest'])->where('url', '.*');
-Route::post('/dynamic-route', [DynamicRoutingController::class, 'handlePostRequest']);
+Route::post('/{url}', [DynamicRoutingController::class, 'handlePostRequest'])->where('url', '.*');

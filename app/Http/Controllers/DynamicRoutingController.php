@@ -15,7 +15,7 @@ class DynamicRoutingController extends Controller
         $response = response()->json([
                     'csrfToken' => $csrfToken,
                     'url' => $url,
-                    'agent string' => $agent,
+                    'agent-string' => $agent,
                     'host' => $host
                 ]);
         return $response;
@@ -29,7 +29,7 @@ class DynamicRoutingController extends Controller
         $agent = $request->header('User-Agent'); //or $request->userAgent();
         $response = response()->json([
                         'url' => $url,
-                        'agent string' => $agent,
+                        'agent-string' => $agent,
                         'host' => $host,
                         'body' => $data
                     ]);
